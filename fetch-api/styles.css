@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+html { overflow-x: hidden; }
+
 /* NAVIGATION BAR */
 .nav {
     display: flex;
@@ -48,4 +50,28 @@
 .nav__link {
     text-decoration: none;
     color: black;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    top: 9rem;
+    text-align: center;
+}
+
+.hero__title {
+    font-family: 'VT323', monospace;
+    font-size: 8rem;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: -6%;
+}
+
+.hero__subtitle {
+    font-family: "Manrope", sans-serif;
+    font-size: 1.35rem;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    transform: translateY(-5px);
 }
