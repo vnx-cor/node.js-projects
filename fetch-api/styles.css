@@ -75,3 +75,63 @@ html { overflow-x: hidden; }
     font-style: normal;
     transform: translateY(-5px);
 }
+
+/* Custom Border (Visible Corners) */
+.hero__corner-box {
+    position: relative;
+    width: 110px;
+    height: 40px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Top-left and bottom-right corners */
+.hero__corner-box::before,
+.hero__corner-box::after {
+    content: '';
+    position: absolute;
+    width: 20px;    /* length of corner line */
+    height: 20px;
+    border: 3px solid black; /* corner color */
+}
+
+/* Top-left */
+.hero__corner-box::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+/* Bottom-right */
+.hero__corner-box::after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+
+/* Add two more corners using inner divs */
+.hero__corner-box .top-right,
+.hero__corner-box .bottom-left {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 3px solid black;
+}
+
+.hero__corner-box .top-right {
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+}
+
+.hero__corner-box .bottom-left {
+    bottom: 0;
+    left: 0;
+    border-top: none;
+    border-right: none;
+}
