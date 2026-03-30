@@ -79,7 +79,7 @@ html { overflow-x: hidden; }
 /* Custom Border (Visible Corners) */
 .hero__corner-box {
     position: relative;
-    width: 110px;
+    width: 150px;
     height: 40px;
     margin: 50px;
     display: flex;
@@ -92,8 +92,8 @@ html { overflow-x: hidden; }
 .hero__corner-box::after {
     content: '';
     position: absolute;
-    width: 20px;    /* length of corner line */
-    height: 20px;
+    width: 12px;    /* length of corner line */
+    height: 12px;
     border: 3px solid black; /* corner color */
 }
 
@@ -117,8 +117,8 @@ html { overflow-x: hidden; }
 .hero__corner-box .top-right,
 .hero__corner-box .bottom-left {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 12px;
+    height: 12px;
     border: 3px solid black;
 }
 
@@ -135,3 +135,25 @@ html { overflow-x: hidden; }
     border-top: none;
     border-right: none;
 }
+
+/* CTA Button */
+.hero__button {
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+}
+.hero__button::after {
+    content: '';
+    position: absolute;
+    left: 1.25rem;
+    bottom: 5px;
+    width: 0;             
+    height: 1px;          
+    background-color: black; 
+    transition: width 0.3s ease; 
+}
+.hero__button:hover::after { width: 74%; }
