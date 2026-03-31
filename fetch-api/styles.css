@@ -123,6 +123,7 @@ body { overflow-x: hidden; }
 }
 
 /* CTA Button */
+.hero__corner-box { width: 150px; }
 .hero__button:hover::after { width: 74%; }
 
 /* 4.3 ABOUT SECTION */
@@ -198,6 +199,9 @@ body { overflow-x: hidden; }
     height: 100%;
 }
 
+.about__corner-box { width: 180px; }
+.about__button:hover::after { width: 78%; }
+
 /* =====================================================
    5. COMPONENTS  
    ===================================================== */
@@ -207,7 +211,6 @@ body { overflow-x: hidden; }
 .corner-box {
     position: relative;
     top: 4rem;
-    width: 150px;
     height: 40px;
     margin: 50px;
     display: flex;
