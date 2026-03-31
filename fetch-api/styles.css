@@ -264,10 +264,12 @@ body { overflow-x: hidden; }
     height: 100%;
 }
 .about__image--1 img {
+    transform: translateX(-175px);
     width: 200%;
     height: 100%;
 }
 .about__image--2 img {
-    width: 200%;
+    transform: translateX(-285px);
+    width: 250%;
     height: 100%;
 }
