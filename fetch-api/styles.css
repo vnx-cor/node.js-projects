@@ -1,3 +1,20 @@
+/* =====================================================
+   CONTENT INDEX
+   =====================================================
+   1. CSS Reset / Normalize
+   2. Root Variables
+   3. Base Styles  
+   4. Layout, Components, & Sections
+      4.1 Navigation Bar
+      4.2 Hero Section
+      4.3 About Section
+   =====================================================
+*/
+
+/* =====================================================
+   1. CSS RESET / NORMALIZE    
+   ===================================================== */
+
 *, 
 *::before,
 *::after {
@@ -6,9 +23,28 @@
     box-sizing: border-box;
 }
 
+/* =====================================================
+   2. ROOT VARIABLES  
+   ===================================================== */
+
+:root {
+    /* Color System */
+
+    /* Typography */
+
+}
+
+/* =====================================================
+   3. BASE STYLES  
+   ===================================================== */
+
 html { overflow-x: hidden; }
 
-/* NAVIGATION BAR */
+/* =====================================================
+   4. LAYOUT, COMPONENTS, & SECTIONS
+   ===================================================== */
+
+/* 4.1 NAVIGATION BAR */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -52,7 +88,7 @@ html { overflow-x: hidden; }
     color: black;
 }
 
-/* HERO SECTION */
+/* 4.2 HERO SECTION */
 .hero {
     position: relative;
     top: 9rem;
@@ -163,7 +199,7 @@ html { overflow-x: hidden; }
 }
 .hero__button:hover::after { width: 74%; }
 
-/* ABOUT SECTION */
+/* 4.3 ABOUT SECTION */
 .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
