@@ -29,9 +29,12 @@
 
 :root {
     /* Color System */
+    --primary-color: #000;
+    --secondary-color: #fff;
 
     /* Typography */
-
+    --font-header: 'VT323', monospace;
+    --font-body: 'Manrope', sans-serif;
 }
 
 /* =====================================================
