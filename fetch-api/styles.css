@@ -57,7 +57,7 @@ html { overflow-x: hidden; }
     left: 0;
     width: 100%;
     height: 10vh;
-    border: 1px solid black;
+    border: 1px solid var(--primary-color);
 }
 
 .nav__title {
@@ -88,7 +88,7 @@ html { overflow-x: hidden; }
 
 .nav__link {
     text-decoration: none;
-    color: black;
+    color: var(--primary-color);
 }
 
 /* 4.2 HERO SECTION */
@@ -138,7 +138,7 @@ html { overflow-x: hidden; }
     position: absolute;
     width: 11px;    /* length of corner line */
     height: 11px;
-    border: 2.5px solid black; /* corner color */
+    border: 2.5px solid var(--primary-color); /* corner color */
 }
 
 /* Top-left */
@@ -163,7 +163,7 @@ html { overflow-x: hidden; }
     position: absolute;
     width: 11px;
     height: 11px;
-    border: 2.5px solid black;
+    border: 2.5px solid var(--primary-color);
 }
 
 .hero__corner-box .top-right {
@@ -188,7 +188,7 @@ html { overflow-x: hidden; }
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
-    color: black;
+    color: var(--primary-color);
 }
 .hero__button::after {
     content: '';
@@ -197,7 +197,7 @@ html { overflow-x: hidden; }
     bottom: 5px;
     width: 0;             
     height: 1px;          
-    background-color: black; 
+    background-color: var(--primary-color); 
     transition: width 0.3s ease; 
 }
 .hero__button:hover::after { width: 74%; }
@@ -210,7 +210,7 @@ html { overflow-x: hidden; }
     grid-template-areas:
         "about-text about-image";
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 }
 
 .about__text-wrapper {
@@ -224,7 +224,6 @@ html { overflow-x: hidden; }
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    color: black;
 }
 
 .about__text-highlight {
