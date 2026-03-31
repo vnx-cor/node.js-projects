@@ -233,11 +233,13 @@ body { overflow-x: hidden; }
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+    line-height: 2.25rem;
+    margin-bottom: 1rem;
 }
 
 .about__description {
     font-family: var(--font-body);
-    font-size: 1rem;
+    font-size: 1.15rem;
 }
 
 .about__text-highlight {
