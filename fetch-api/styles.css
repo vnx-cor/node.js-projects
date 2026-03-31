@@ -4,10 +4,12 @@
    1. CSS Reset / Normalize
    2. Root Variables
    3. Base Styles  
-   4. Layout, Components, & Sections
+   4. Layout & Sections
       4.1 Navigation Bar
       4.2 Hero Section
       4.3 About Section
+   5. Components
+      5.1 Button
    =====================================================
 */
 
@@ -120,87 +122,7 @@ body { overflow-x: hidden; }
     transform: translateY(-5px);
 }
 
-/* Custom Border (Visible Corners) */
-.hero__corner-box {
-    position: relative;
-    top: 4rem;
-    width: 150px;
-    height: 40px;
-    margin: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Top-left and bottom-right corners */
-.hero__corner-box::before,
-.hero__corner-box::after {
-    content: '';
-    position: absolute;
-    width: 11px;    /* length of corner line */
-    height: 11px;
-    border: 2.5px solid var(--primary-color); /* corner color */
-}
-
-/* Top-left */
-.hero__corner-box::before {
-    top: 0;
-    left: 0;
-    border-right: none;
-    border-bottom: none;
-}
-
-/* Bottom-right */
-.hero__corner-box::after {
-    bottom: 0;
-    right: 0;
-    border-left: none;
-    border-top: none;
-}
-
-/* Add two more corners using inner divs */
-.hero__corner-box .top-right,
-.hero__corner-box .bottom-left {
-    position: absolute;
-    width: 11px;
-    height: 11px;
-    border: 2.5px solid var(--primary-color);
-}
-
-.hero__corner-box .top-right {
-    top: 0;
-    right: 0;
-    border-left: none;
-    border-bottom: none;
-}
-
-.hero__corner-box .bottom-left {
-    bottom: 0;
-    left: 0;
-    border-top: none;
-    border-right: none;
-}
-
 /* CTA Button */
-.hero__button {
-    font-family: var(--font-body);
-    font-size: 1rem;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    color: var(--primary-color);
-}
-.hero__button::after {
-    content: '';
-    position: absolute;
-    left: 1.25rem;
-    bottom: 5px;
-    width: 0;             
-    height: 1px;          
-    background-color: var(--primary-color); 
-    transition: width 0.3s ease; 
-}
 .hero__button:hover::after { width: 74%; }
 
 /* 4.3 ABOUT SECTION */
@@ -274,4 +196,91 @@ body { overflow-x: hidden; }
     transform: translateX(-285px);
     width: 250%;
     height: 100%;
+}
+
+/* =====================================================
+   5. COMPONENTS  
+   ===================================================== */
+
+/* 5.1 BUTTON */
+/* Custom Border for Button (Visible Corners) */
+.corner-box {
+    position: relative;
+    top: 4rem;
+    width: 150px;
+    height: 40px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Top-left and bottom-right corners */
+.corner-box::before,
+.corner-box::after {
+    content: '';
+    position: absolute;
+    width: 11px;    /* length of corner line */
+    height: 11px;
+    border: 2.5px solid var(--primary-color); /* corner color */
+}
+
+/* Top-left */
+.corner-box::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+/* Bottom-right */
+.corner-box::after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+
+/* Add two more corners using inner divs */
+.corner-box .top-right,
+.corner-box .bottom-left {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border: 2.5px solid var(--primary-color);
+}
+
+.corner-box .top-right {
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+}
+
+.corner-box .bottom-left {
+    bottom: 0;
+    left: 0;
+    border-top: none;
+    border-right: none;
+}
+
+/* Underline Animation */
+.button {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.button::after {
+    content: '';
+    position: absolute;
+    left: 1.25rem;
+    bottom: 5px;
+    width: 0;             
+    height: 1px;          
+    background-color: var(--primary-color); 
+    transition: width 0.3s ease; 
 }
