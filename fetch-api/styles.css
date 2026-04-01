@@ -230,18 +230,35 @@ body { overflow-x: hidden; }
 .features__cards {
     display: flex;
     flex-wrap: nowrap;
-    width: 80%;
+    width: 92%;
     height: auto;
     justify-content: space-around;
 }
 
 .features__card {
     border: 1.5px solid var(--primary-color);
-    border-radius: 8px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 400px;
 }
+
+.features__animation {
+    width: 90%;
+    height: auto;
+}
+
+.features__table {
+    border-collapse: collapse;
+}
+
+.features__th, 
+.features__td {
+    border: 1px solid black;
+} 
 
 /* =====================================================
    5. COMPONENTS  
