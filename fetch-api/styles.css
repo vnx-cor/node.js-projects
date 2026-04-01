@@ -43,6 +43,8 @@
    3. BASE STYLES  
    ===================================================== */
 
+html { scroll-behavior: smooth; }
+html::-webkit-scrollbar { display: none; }
 body { overflow-x: hidden; }
 
 /* =====================================================
