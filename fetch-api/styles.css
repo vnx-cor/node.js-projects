@@ -292,7 +292,8 @@ body { overflow-x: hidden; }
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 8px;
+    margin-bottom: 1rem;
 }
 .features__button:hover { 
     background-color: #242424; 
